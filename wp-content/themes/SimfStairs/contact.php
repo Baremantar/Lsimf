@@ -31,9 +31,10 @@
         </p>
         <form action="clickHandler(e)" id="form">
             <input type="text" id="name" placeholder="Имя" required>
-            <input type="email" id="email" placeholder="E-mail" required>
-            <input type="tel" id="phone" placeholder="Телефон"required>
+            <input type="text" id="email" placeholder="E-mail" required>
+            <input type="tel" id="phone" placeholder="Телефон" required>
             <textarea id="text" placeholder="Текст письма" required></textarea>
+            <p id="thank">Спасибо за заявку, мы скоро с вами свяжемся!</p>
             <input type="submit" value="Отправить" id="submit">
         </form>
     </section>
