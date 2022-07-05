@@ -14,18 +14,6 @@
  * Template Name: Gallery
  */
 
-$my_posts = get_posts(array(
-    'numberposts' => 5,
-    'category'    => 0,
-    'orderby'     => 'date',
-    'order'       => 'DESC',
-    'include'     => array(),
-    'exclude'     => array(),
-    'meta_key'    => '',
-    'meta_value'  => '',
-    'post_type'   => 'post',
-    'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-));
 
 
 ?>
@@ -37,15 +25,7 @@ $my_posts = get_posts(array(
             Примеры работ
         </h1>
         <div class="container_wrapper">
-            <?php foreach ($my_posts as $post) {
-                setup_postdata($post);
-            ?>
-                <div>
-                    <p><?= $post->post_title ?></p>
-                    <?= ($post->post_content) ?>
-                </div>
-            <?php
-            } ?>
+            <?= get_post_gallery()?>
         </div>
     </section>
     <section class="container popup">

@@ -1,6 +1,7 @@
 import "slick-carousel";
 import $ from "jquery";
 import Inputmask from "inputmask";
+import burger from './burger.js';
 
 window.onload = () =>{
   console.log("Document load and parsed");
@@ -65,4 +66,5 @@ window.onload = () =>{
     }
 
   }
+burger;
 };
